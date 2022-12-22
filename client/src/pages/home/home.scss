@@ -1,0 +1,23 @@
+@import "../../style.scss";
+
+.home {
+  padding: 20px 70px;
+  min-height: 100vh;
+
+  @include mobile {
+    padding: 10px;
+  }
+
+  @include tablet {
+    padding: 20px;
+  }
+}
+
+.home.theme-dark {
+  background-color: theme-dark("bgSoft") !important;
+
+}
+
+.home.theme-light {
+  background-color: theme-light("bgSoft");
+}
